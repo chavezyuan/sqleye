@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sqlSessionFactoryScan " class="com.sqleye.scan.SqlSessionFactoryScan" scope="singleton" init-method="init">
+        <property name="threshold" value="${sqleye.time.threshold:10}"></property>
+        <property name="on" value="${sqleye.on:true}"></property>
+    </bean>
+
+</beans>
