@@ -20,7 +20,7 @@ Sqleye是基于Spring和Mybatis的客户端sql执行时间监控工具。
 默认监控开启，且`time threshold=10ms`
 当`sql`执行时间未超过`time threshold`，打印`debug`日志
 
-    WARN - [SQL Info][threshold=10][actual=9][SQL]
+    DEBUG - [SQL Info][threshold=10][actual=9][SQL]
 当`sql`执行时间超过`time threshold`，打印出`warn`日志
 
     WARN - [SQL Alert][threshold=10][actual=21][SQL]
